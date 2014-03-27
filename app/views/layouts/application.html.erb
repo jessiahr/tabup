@@ -13,7 +13,73 @@
 
   <body>
 
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+  <!-- Nav Bar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <!--<div class="nav-bar right">-->
+        <!--&lt;!&ndash;<ul class="button-group">&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" class="button">Link 1</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" class="button">Link 2</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" class="button">Link 3</a></li>&ndash;&gt;-->
+          <!--&lt;!&ndash;<li><a href="#" class="button">Link 4</a></li>&ndash;&gt;-->
+        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+      <!--</div>-->
+      <h1> <small>Making tables fancy.</small></h1>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-12 columns" role="content">
+
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+
+
+
+
+
+    </div>
+
+    <!-- End Main Content -->
+
+
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
   </body>
 </html>

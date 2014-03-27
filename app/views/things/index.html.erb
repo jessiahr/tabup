@@ -1,0 +1,45 @@
+<table class="responsive">
+  <tbody>
+  <tr>
+    <th>Name</th>
+    <th>What is it</th>
+    <th>When is it</th>
+    <th>Tags</th>
+    <th>Other</th>
+  </tr>
+  <% @things.each do |thing| %>
+      <tr>
+        <td><%= thing.name %></td>
+        <td>other stuff</td>
+        <td>000cb40d</td>
+        <td></td>
+        <td></td>
+      </tr>
+  <% end %>
+
+
+  </tbody>
+</table>
+
+<table class="responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Detail 1</th>
+      <th>Detail 2</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @things.each do |thing| %>
+      <tr>
+        <td><%= thing.name %> lkjsdhlaskjdfhaslkjdfhaslkdjfhaslkdjfhaslkjdhflaskjdhflaskjdhf</td>
+        <td><%= link_to 'Show', thing %></td>
+        <td><%= link_to 'Edit', edit_thing_path(thing) %></td>
+        <td><%= link_to 'Destroy', thing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
