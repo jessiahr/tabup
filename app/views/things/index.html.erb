@@ -1,4 +1,4 @@
-<table class="responsive">
+<table id="sortable" class="table table-striped table-bordered table-hover table-condensed table-responsive  draggable sortable">
   <tbody>
   <tr>
     <th>Name</th>
@@ -11,7 +11,7 @@
       <tr>
         <td><%= thing.name %></td>
         <td>other stuff</td>
-        <td>000cb40d</td>
+        <td><%= thing.saved_date.strftime(" %_m/%e")  %></td>
         <td></td>
         <td></td>
       </tr>
@@ -42,4 +42,9 @@
     <% end %>
   </tbody>
 </table>
+<script>
+
+
+
+</script>
 

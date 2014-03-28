@@ -8,5 +8,5 @@
 
 puts "Creating things...."
 25.times.each do |i|
-  Thing.create(:name => "Thing #{i}")
+  Thing.create(:name => "Thing #{i}", :saved_date => rand(1..5).days.ago)
 end
